@@ -321,6 +321,11 @@
             - createSlice(): used to combine action and reducer in a single file.
                 - steps to use slice in react app:
                     - create a js file for creating slice 
+            - createAsyncThunk(): used to make asyncronous call in an action in redux. It accepts 2 arguments, first is action type string ("slice-name/action-name"), second is callback function it can return a promise. its output can be 3 types:
+                - Pending 
+                - Fullfilled
+                - Reject
+                "extraReducers" in state can handle promise return action. Because it define different cases to update slice state, based on promise output.
     4. Hooks used in component for managing state using redux:
         - useSelector(state=>state.reducer_name): used  to select state from store in a component.
         - usedispatch(): used to execute an action from a component. Hook will return a function that is capable of dispatching an action as its argument when we call the function.
