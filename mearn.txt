@@ -226,6 +226,9 @@
                 - useState(initial value) hook: used to create state in functional component, this hook will return an array of 2 arguments. First argument is a state, second argument is a function name used to update state. State updating function name must start with 'set'.
                 - useEffect(callbackfn, dependency): used to apply side efffects to a functional component.  we can pass side effects as its first argument as callback function, we can also pass an optional dependency argument to decide when to apply side effects in component.
                 - useRef(initial value optional): is a react hook that lets you reference a value that's not needed for rendering. initial value is optional, it returns an object "Current" key.
+                - useSelector(): hook used to select state from a redux store.
+                - usedispatch(): hook used to dispatch action from component.
+                - useParams(): hook will return dynamic value of route associated with component.
             - custom hooks: create a js file to define a specific function for a special task. export the function from that file. function name must start with "use" keyword.
     13. Form HAndling in react: There are 2 ways to manage data inside the form by a component.
         - Controlled Components: are components which store form data inside its own state.
